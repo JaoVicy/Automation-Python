@@ -11,7 +11,8 @@ def criar_ambiente(diretorio_projeto):
     if os.path.exists(venv_path):
         print(f"Ambiente virtual já existe em '{venv_path}'.")
         return
-
+    try:
+        subprocess.run(['venv', venv_path], check=True)
 
 
 
