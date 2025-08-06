@@ -4,6 +4,10 @@ import subprocess
 
 def criar_ambiente(diretorio_projeto):
 
+    if not os.path.exists(diretorio_projeto):
+        print(f"Diretório do projeto '{diretorio_projeto}' não encontrado.")
+        return
+    
 
 
 
