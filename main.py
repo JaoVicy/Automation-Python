@@ -22,6 +22,9 @@ def instalar_dependencias(diretorio_projeto, requirements_file):
     if not os.path.exists(requirements_file):
         print(f"Arquivo de requisitos '{requirements_file}' não encontrado.")
         return
+    
+venv_path = os.path.join(diretorio_projeto, 'venv', 'bin', 'pip')
+subprocess.run(['source', 'venv_path' requirements_file], shell=True) 
 
 def main():
 
