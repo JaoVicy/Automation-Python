@@ -26,6 +26,9 @@ def instalar_dependencias(diretorio_projeto, requirements_file):
 venv_path = os.path.join(diretorio_projeto, 'venv', 'bin', 'pip')
 subprocess.run(['source', 'venv_path' requirements_file], shell=True) 
 
+try:
+        subprocess.run(['pip', 'install', '-r', requirements_file])
+        print(f"Dependências instaladas a partir de '{requirements_file}'.")
 def main():
 
     diretorio_projeto = sys.argv[1]
