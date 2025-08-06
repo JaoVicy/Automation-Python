@@ -41,3 +41,6 @@ def main():
 
     criar_ambiente(diretorio_projeto)
     instalar_dependencias(diretorio_projeto, requirements_file)
+
+if __name__ == '__main__':
+    main()
