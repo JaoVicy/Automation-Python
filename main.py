@@ -29,6 +29,9 @@ subprocess.run(['source', 'venv_path' requirements_file], shell=True)
 try:
         subprocess.run(['pip', 'install', '-r', requirements_file])
         print(f"Dependências instaladas a partir de '{requirements_file}'.")
+except subprocess.CalledProcessError as e:
+        print(f"Erro ao instalar dependências: {e}")
+        
 def main():
 
     diretorio_projeto = sys.argv[1]
