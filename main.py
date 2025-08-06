@@ -12,7 +12,7 @@ def criar_ambiente(diretorio_projeto):
         print(f"Ambiente virtual já existe em '{venv_path}'.")
         return
     try:
-        subprocess.run(['venv', venv_path], check=True)
+        subprocess.run([sys.executable, '-m', 'venv', venv_path], check=True)
         print(f"Ambiente virtual criado em '{venv_path}'.")
     except subprocess.CalledProcessError as e:
         print(f"Erro ao criar ambiente virtual: {e}")
