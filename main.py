@@ -19,6 +19,9 @@ def criar_ambiente(diretorio_projeto):
         return
 
 def instalar_dependencias(diretorio_projeto, requirements_file):
+    if not os.path.exists(requirements_file):
+        print(f"Arquivo de requisitos '{requirements_file}' não encontrado.")
+        return
 
 def main():
 
