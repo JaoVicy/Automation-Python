@@ -13,7 +13,10 @@ def criar_ambiente(diretorio_projeto):
         return
     try:
         subprocess.run(['venv', venv_path], check=True)
-
+        print(f"Ambiente virtual criado em '{venv_path}'.")
+    except subprocess.CalledProcessError as e:
+        print(f"Erro ao criar ambiente virtual: {e}")
+        return
 
 
 
