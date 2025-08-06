@@ -18,7 +18,7 @@ def criar_ambiente(diretorio_projeto):
         print(f"Erro ao criar ambiente virtual: {e}")
         return
 
-
+def instalar_dependencias(diretorio_projeto, requirements_file):
 
 def main():
 
