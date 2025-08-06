@@ -7,6 +7,7 @@ def criar_ambiente(diretorio_projeto):
     if not os.path.exists(diretorio_projeto):
         print(f"Diretório do projeto '{diretorio_projeto}' não encontrado.")
         return
+    venv_path = os.path.join(diretorio_projeto, 'venv')
     
 
 
