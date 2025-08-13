@@ -14,6 +14,8 @@ url = "https://www.example.com"
 driver.get(url)
 time.sleep(5)  # Wait for the page to load
 
+# Main page tests:
 assert "Example Domain" in driver.title
 assert "More information..." in driver.page_source
 print("Test completed successfully!")
+
