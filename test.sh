@@ -7,3 +7,8 @@ chrome_path = "/Users/jao/Documents/Projetos/Automation-Python/chrome-mac-arm64/
 chrome_options = webdriver.ChromeOptions()
 chrome_options.binary_location = chrome_path
 driver = webdriver.Chrome(options=chrome_options)
+
+
+url = "https://www.example.com"
+
+driver.get(url)
