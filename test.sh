@@ -25,3 +25,10 @@ time.sleep(5)  # Wait for the page to load
 assert "Forms" in driver.title
 assert "Submit" in driver.page_source
 print("Form page test completed successfully!")
+
+#Grafics page tests:
+driver.get(url + "/graphics")
+time.sleep(5)  # Wait for the page to load
+assert "Graphics" in driver.title
+assert "Canvas" in driver.page_source
+print("Graphics page test completed successfully!")
