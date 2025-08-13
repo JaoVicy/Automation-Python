@@ -12,3 +12,4 @@ driver = webdriver.Chrome(options=chrome_options)
 url = "https://www.example.com"
 
 driver.get(url)
+time.sleep(5)  # Wait for the page to load
