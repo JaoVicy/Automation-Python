@@ -17,10 +17,11 @@ time.sleep(5)  # Wait for the page to load
 # Main page tests:
 assert "Example Domain" in driver.title
 assert "More information..." in driver.page_source
-print("Test completed successfully!")
+print("Main page test completed successfully!")
 
 #Forms page tests:
 driver.get(url + "/forms")
 time.sleep(5)  # Wait for the page to load
 assert "Forms" in driver.title
 assert "Submit" in driver.page_source
+print("Form page test completed successfully!")
